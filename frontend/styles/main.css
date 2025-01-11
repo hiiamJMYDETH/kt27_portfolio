@@ -1,0 +1,90 @@
+body {
+    background-color: rgb(238, 216, 198);
+    font-family:Arial;
+    margin:0px;
+    padding:0px;
+    z-index:10;
+    pointer-events:auto;
+}
+
+.container-header {
+    width: 100vw;
+    height:10px;
+    position:relative;
+    transition: transform .4s ease;
+}
+
+.header {
+    position:absolute;
+    display:flex;
+    background-color:white;
+    box-shadow: 5px 5px black;
+    justify-content:space-around;
+    width: 100vw;
+    height:100%;
+    visibility:hidden;
+    opacity:0;
+    transition: opacity 0.4s ease, visibility 0.4s ease, transform .4s ease;
+}
+
+.box {
+    display:grid;
+    place-items:center;
+    min-height:100vh;
+}
+.intro-box {
+    place-items:center;
+    background-color:white;
+    border:1px solid black;
+    box-shadow: 5px 5px black;
+    padding:10px;
+}
+.intro-text {
+    font-weight:normal;
+}
+.contact-boxes {
+    display:grid;
+}
+.button {
+    position:relative;
+    background-color:white;
+    border:1px solid black;
+    box-shadow:5px 5px black;
+    transition: transform .4s box-shadow .4s;
+    transition-duration:.4s;
+    padding:10px;
+}
+
+.container-header:hover {
+    transform:translateY(20px);
+}
+
+.container-header:hover .header{
+    visibility:visible;
+    opacity:1;
+    /* transform:translateY(20px); */
+}
+.resume:hover {
+    background-color:rgb(123, 71, 64);
+    color:white;
+    transform: translate(5px, 5px);
+    box-shadow:none;
+}
+.linkedin:hover {
+    background-color:rgb(0, 123, 255);
+    color:white;
+    transform: translate(5px, 5px);
+    box-shadow:none;
+}
+.github:hover {
+    background-color: purple;
+    color:white;
+    transform: translate(5px, 5px);
+    box-shadow:none;
+}
+.email:hover {
+    background-color:green;
+    color:white;
+    transform: translate(5px, 5px);
+    box-shadow:none;
+}
