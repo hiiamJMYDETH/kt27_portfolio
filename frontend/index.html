@@ -2,38 +2,143 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <title>Kevin Trinh Portfolio</title>
         <link rel="icon" type="image/png" href="./images/that-logo-looks-sick-copy.svg">
         <link rel="stylesheet" href="./styles/main.css">
         </style>
     </head>
     <body>
-        <!-- <div class="container-header">
-            <div class="header">
-                <h2 class="intro-text">about</h2>
-                <h2 class="intro-text">projects</h2>
-                <h2 class="intro-text">other activities</h2>
-            </div>
-        </div> -->
-        <div class="box">
-            <div class="intro-box">
-                <h1 class="intro-text">Hi, my name is Kevin Trinh</h1>
-                <h2 class="intro-text">and I'm a entry-level full-stack</h2>
-                <h2 class="intro-text">web developer, and a UCLA</h2>
-                <h2 class="intro-text">student</h2>
+        <div class="center-box">
+            <div class="white-box">
+                <h1 class="h1-text">Hi, my name is Kevin Trinh</h1>
+                <h2 class="h1-text">and I'm a entry-level full-stack</h2>
+                <h2 class="h1-text">web developer and a UCLA</h2>
+                <h2 class="h1-text">student, from San Jose, CA.</h2>
             </div>
             <div class="contact-boxes">
                 <button class="button email" onclick="window.open('mailto:kevintr1005@gmail.com')">Contact me</button>
-                <!-- <a class="button resume" href="../" download="Kevin Trinh, Winter 2024 resume">
-                    <button class="button resume">My resume</button>
-                     My resume
-                </a> -->
                 <button class="button resume" id="resume-btn">My resume</button>
                 <button class="button linkedin" onclick="window.location.href='https:linkedin.com/in/hiiamkevintrinh'">Linkedin</button>
                 <button class="button github" onclick="window.location.href='https://github.com/hiiamJMYDETH'">GitHub</button>
             </div>
         </div>
+        <hr class="break"></hr>
+        <div class="center-box">
+            <br>
+            <div class="white-box">
+                <h1 class="h1-text">Projects</h1>
+            </div>
+            <br>
+            <div class="white-box project">
+                <div class="project-header" style="justify-items:center">
+                    <h1 class="h1-text">September 2024 - Present</h1>
+                    <h1 class="h1-text">Sticky Vomit Notes</h1>
+                </div>
+                <div class="button crop">
+                    <img style="width:800px; margin:-70px 0 0 -210px" src="./images/Screenshot 0007-01-08 at 21.48.15.png"
+                        alt="Demo of Sticky Vomit Notes" onclick="window.location.href='https://stickyvomitnotes.onrender.com/'">
+                </div>
+                <div class="paragraph">
+                    <li>Developed a full stack quick note taking app using JavaScript, HTML, CSS, Node.js, PostgreSQL (with MySQL
+                        for personal use), and JSON api</li>
+                    <li>Enables account creation, logging in, and generating templates for taking notes.</li>
+                    <li>Allows local saving through JSON and cloud saving through PostgreSQL (MySQL for personal use)</li>
+                    <li>Enables autocomplete through Tries and saving saved words while typing and automatically loads them (if
+                            registered)</li>
+                </div>
+                <div class="demo" style="display:flex">
+                    <button class="button repo-btn"
+                        onclick="window.location.href='https://github.com/hiiamJMYDETH/StickyVomitNotes'">Repository</button>
+                </div>
+            </div>
+            <br>
+        </div>
+        <hr class="break"></hr>
+        <div class="center-box">
+            <div class="white-box">
+                <h1 class="h1-text">About me</h1>
+            </div>
+            <br>
+            <div class="white-box">
+                <div class="paragraph" style="justify-items:center;">
+                    <h3 class="h1-text">I am Kevin Trinh, a Linguistics and Computer Science student at UCLA</h3>
+                    <h3 class="h1-text">(University of California, Los Angeles) who aspires to learn as much as</h3>
+                    <h3 class="h1-text">possible, though very interested in solving complex bleeding-edge problems</h3>
+                    <h3 class="h1-text">particularly issues in software development and applying them to the real</h3>
+                    <h3 class="h1-text">world. </h3>
+                    <br>
+                    <h3 class="h1-text">I have a couple months of experience as a full stack developer and I'm the</h3>
+                    <h3 class="h1-text">most experience on that field. Though I have experience working with other</h3>
+                    <h3 class="h1-text">programming concepts and languages, not reflected in the pieces of work</h3>
+                    <h3 class="h1-text">provided, including Python, C++, MySQL, Vercel, VS Code, and C, with varying</h3>
+                    <h3 class="h1-text">yet working knowledge of all these concepts.</h3>
+                    <br>
+                    <h3 class="h1-text">My outside experience allows me to be more empathetic to other people, which</h3>
+                    <h3 class="h1-text">makes me capable to handle in the workplace. As a matter of fact, they have</h3>
+                    <h3 class="h1-text">allowed me to find other soft skills like communication, leadership, creativity,</h3>
+                    <h3 class="h1-text">work ethic, and time management. I hope that I can build experience that utilizes</h3>
+                    <h3 class="h1-text">all of those skills. </h3>
+                    <br>
+                    <h3 class="h1-text">Outside of programming, I enjoy making YouTube videos and making music, along with</h3>
+                    <h3 class="h1-text">consuming and writing blogs.</h3>
+                </div>
+            </div>
+            <br>
+        </div>
+        <hr class="break">
+        <div class="center-box">
+            <div class="white-box">
+                <h1 class="h1-text">Outside work</h1>
+            </div>
+            <br>
+            <div class="white-box project">
+                <div class="project-header" style="justify-items:center">
+                    <h1 class="h1-text">September 2024 - Present</h1>
+                    <h2 class="h1-text" style="justify-self:center;">Volunteer at Good Clothes Good People</h2>
+                </div>
+                <div class="button crop">
+                    <img style="width:600px; margin:0 0 0 -100px" src="https://goodclothesgoodpeople.org/wp-content/uploads/2022/09/gcgp_header.png?w=400&h=242"
+                        alt="goodclothesgoodpeople website" onclick="window.location.href='https://goodclothesgoodpeople.org/'">
+                </div>
+                <div class="paragraph">
+                    <li>Developed relevant communication skills via aiding at least 10 people to borrow and donate things of need</li>
+                    <li>Aided other volunteers to monitor checkins and checkouts</li>
+                </div>
+            </div>
+            <br>
+            <div class="white-box project">
+                <div class="project-header" style="justify-items:center">
+                    <h1 class="h1-text">January 2024 - Present</h1>
+                    <h2 class="h1-text" style="justify-self:center;">Volunteer at SoCal Science Olympiad</h2>
+                </div>
+                <div class="button crop">
+                    <img style="width:400px;" src="data:image/png;base64,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"
+                        alt="science olympiad" onclick="window.location.href='https://socalscioly.org/'">
+                </div>
+                <div class="paragraph">
+                    <li>Supervised more than 3 events among more than 50 students who competed in Southern California</li>
+                    <li>Developed strong communication skills through shared experience and developed working knowledge of people around the area, especially Southern California</li>
+                </div>
+            </div>
+            <br>
+            <div class="white-box project">
+                <div class="project-header" style="justify-items:center">
+                    <h1 class="h1-text">June 2022 - Present</h1>
+                    <h2 class="h1-text" style="justify-self:center;">Writer at my blog</h2>
+                </div>
+                <div class="button crop">
+                    <img style="width:400px;" src="./images/what-is-that-logo-copy.png"
+                        alt="science olympiad" onclick="window.location.href='https://hiiamkevintrinh.wixsite.com/kevintrinh'">
+                </div>
+                <div class="paragraph">
+                    <li>Published over 15 articles with illustrations</li>
+                    <li>Learned basic web design through Wix</li>
+                    <li>Developed writing and communication skills, along with personal character</li>
+                </div>
+            </div>
+        </div>
+        <br>
         <script type="module" src="./scripts/download.js"></script>
     </body>
 </html>

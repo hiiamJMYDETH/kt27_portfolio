@@ -27,23 +27,24 @@ body {
     transition: opacity 0.4s ease, visibility 0.4s ease, transform .4s ease;
 }
 
-.box {
+.center-box {
     display:grid;
     place-items:center;
     min-height:100vh;
+    justify-items:center;
 }
-.intro-box {
-    place-items:center;
+.white-box {
+    justify-items:center;
     background-color:white;
     border:1px solid black;
     box-shadow: 5px 5px black;
     padding:10px;
 }
-.intro-text {
-    font-weight:normal;
+.white-box > * {
+    padding:10px;
 }
-.contact-boxes {
-    display:grid;
+.h1-text {
+    font-weight:normal;
 }
 .button {
     position:relative;
@@ -53,6 +54,10 @@ body {
     transition: transform .4s box-shadow .4s;
     transition-duration:.4s;
     padding:10px;
+}
+.button:hover {
+    transform: translate(5px, 5px);
+    box-shadow:none;
 }
 
 .container-header:hover {
@@ -67,24 +72,45 @@ body {
 .resume:hover {
     background-color:rgb(123, 71, 64);
     color:white;
-    transform: translate(5px, 5px);
-    box-shadow:none;
 }
 .linkedin:hover {
     background-color:rgb(0, 123, 255);
     color:white;
-    transform: translate(5px, 5px);
-    box-shadow:none;
 }
 .github:hover {
     background-color: purple;
     color:white;
-    transform: translate(5px, 5px);
-    box-shadow:none;
+}
+.repo-btn:hover {
+    background-color: purple;
+    color:white;
 }
 .email:hover {
     background-color:green;
     color:white;
-    transform: translate(5px, 5px);
-    box-shadow:none;
+}
+.demo-btn:hover {
+    background-color:green;
+    color:white;
+}
+.break {
+    color:black;
+    border-bottom: 1px solid black;
+    width:100%;
+}
+.crop {
+    width:400px;
+    height:225px;
+    overflow:hidden;
+    border:1px solid black;
+    box-shadow:5px 5px black;
+}
+/* .crop img {
+    width:800px;
+    height:550px;
+    margin: -75px 0 0 -100px;
+
+} */
+.project {
+    width:40%;
 }
